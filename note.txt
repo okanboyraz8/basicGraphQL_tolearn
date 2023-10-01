@@ -1,0 +1,44 @@
+http://localhost:4000/graphql => GraphiQL Test Environment => (to bring the Personel one by one w/id: "?") =>
+
+{
+  personel(id:"1"){
+    id,
+    isim,
+    email,
+    yas
+  }
+}
+
+***********************************************************************************************
+
+http://localhost:4000/graphql => GraphiQL Test Environment => To access all personnel data: =>
+
+{
+  personeller{
+    isim,
+    id,
+    email,
+    yas
+  }
+}
+
+***********************************************************************************************
+npm install -g json-server
+npm run json:server
+
+> basicgraphql@1.0.0 json:server
+> json-server --watch data.json
+
+  \{^_^}/ hi!
+
+  Loading data.json
+  Done
+
+  Resources
+  http://localhost:3000/personeller
+
+  Home
+  http://localhost:3000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
